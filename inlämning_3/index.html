@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+    <link rel="stylesheet" href="style_inl3.css">
+    <script src="main_inl3.js" defer></script> 
+</head>
+
+<body>
+
+    <div id="message-box">
+        <p>This is a very important message box!</p>
+    </div>
+
+    <button type="button" id="success" onclick="updateMessageBoxClass('success')">Success</button>
+    <button type="button" id="error" onclick="updateMessageBoxClass('error')">Error</button>
+    <button type="button" id="info" onclick="updateMessageBoxClass('info')">Info</button>
+
+    <ul id="items">
+        <li>The first item is free!</li>
+    </ul>
+    
+    <button type="button" id="add-item" onclick="addListItem()">Add item</button>
+    <button type="button" id="remove-item" onclick="removeListItem()">Remove item</button>
+
+    <ul>
+        <li>
+            This is the first item
+            <button type="button" class="remove-list-item" >X</button>
+        </li>
+        <li>
+            This is the second item
+            <button type="button" class="remove-list-item" >X</button>
+        </li>
+        <li>
+            This is the third item
+            <button type="button" class="remove-list-item" >X</button>
+        </li>
+        <li>
+            This is the fourth item
+            <button type="button" class="remove-list-item">X</button>
+        </li>
+    </ul>
+
+    <form action="" method="get" id="apply-for-pet" onsubmit="giveAlert(this)">
+
+        <h2>Ansökan om att skaffa husdjur</h2>
+
+        <input type="text" name="firstname" id="first-name"> Förnamn<br>
+        <input type="text" name="lastname" id="last-name"> Efternamn<br>
+        <input type="text" name="age" id="age"> Ålder<br>
+        <input type="text" name="email" id="email"> Epost<br>
+    
+        <div id="pets">
+            <p>Typ av husdjur?</p>
+            <input type="radio" name="pet" value="dog" id="dog"> Hund<br>
+            <input type="radio" name="pet" value="cat" id="cat"> Katt<br>
+            <input type="radio" name="pet" value="fish" id="fish"> Fisk<br>
+            <input type="radio" name="pet" value="bird" id="bird"> Fågel<br>
+        </div>
+    
+        <button type="submit">Skicka ansökan</button>
+    </form>
+
+
+
+</body>
+
+</html>
